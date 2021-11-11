@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="app">
-            <div class="container">
+            <div :class="getStyle()">
                 <h1>{{title}}</h1>
                 <img :src="imageHref" alt="image description" />
             </div>

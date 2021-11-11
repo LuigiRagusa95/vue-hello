@@ -4,4 +4,13 @@ const vue = new Vue({
         title: 'Hello from Vue.js',
         imageHref: 'https://picsum.photos/id/237/600/350',
     },
+    methods: {
+        getStyle() {
+            return `
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            `;
+        },
+    },
 });
