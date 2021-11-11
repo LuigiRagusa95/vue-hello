@@ -10,7 +10,12 @@ const vue = new Vue({
             display: flex;
             align-items: center;
             flex-direction: column;
+            justify-content: center;
             `;
+        },
+        switchImage() {
+            const randomID = (min, max) => Math.floor(Math.random() * (max - min) + min);
+            this.imageHref = `https://picsum.photos/id/${randomID(250, 300)}/600/350`;
         },
     },
 });
